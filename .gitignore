@@ -1,5 +1,40 @@
-*__pycache__*
-*local_*
-*db*
+
+
+# Ignore configuration files
 conf
+
+# Ignore readme HTML files
 readme.html
+
+# Go build artifacts
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go workspace file
+go.work
+
+# Go module download cache
+/pkg/mod/
+
+# Go test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Vendor directory
+vendor/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.log
+
+charlexMP
