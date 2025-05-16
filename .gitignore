@@ -1,2 +1,5 @@
-charleX.iso
-iso/**
+*__pycache__*
+*local_*
+*db*
+conf
+readme.html

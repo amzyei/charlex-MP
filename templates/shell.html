@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Running Shell</title>
+</head>
+<body>
+    <h1>Running Shell</h1>
+    <fieldset>
+        <textarea id="output" rows="20" cols="80" readonly>
+            {{.Stdout}}
+
+            {{if .Stderr}}
+                Error: {{.Stderr}}{{end}}
+            
+    </textarea>
+    </fieldset>
+    <br />
+    <form action="/execute" method="post" autocomplete="off">
+        <input type="text" name="command" size="80" placeholder="Enter command" autofocus autocomplete="off" />
+        <input type="submit" value="Run" />
+    </form>
+    <br />
+    <div>
+        <strong>Current Directory:</strong> {{.Dir}}
+        <br><a href="/">Main Menu</a>
+    </div>
+</body>
+</html>
