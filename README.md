@@ -28,3 +28,6 @@ A simple Unix-like management panel with a web UI to run shell commands and mana
 
 For local or trusted use only. No authentication; do not expose publicly.
 
+## License
+
+MIT License. See [LICENSE](LICENSE).
